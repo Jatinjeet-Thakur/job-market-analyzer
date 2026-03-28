@@ -2,7 +2,7 @@
 
 A full-stack application that analyzes job market trends by extracting and processing job postings data. The system provides RESTful APIs for job data management, skill extraction analytics, and interactive dashboards for visualizing hiring trends.
 
-## 🚀 Features
+##  Features
 
 - **RESTful APIs**: Built with Java and Spring Boot for comprehensive job posting management
 - **Skill Extraction**: Automated extraction and analysis of trending technologies from job descriptions
@@ -13,7 +13,7 @@ A full-stack application that analyzes job market trends by extracting and proce
   - Most in-demand skills and technologies
 - **Cloud Deployment**: Backend deployed on Railway with publicly accessible API endpoints
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Backend
 - **Java** - Core programming language
@@ -24,13 +24,12 @@ A full-stack application that analyzes job market trends by extracting and proce
 ### Analytics & Visualization
 - **Power BI Desktop** - Interactive dashboard creation
 
-## 🌐 Live API
+## Live API
 
 The backend is live and accessible:
 
 | Service | URL |
 |---------|-----|
-| **Base URL** | `https://job-market-analyzer-production.up.railway.app` |
 | **Jobs Endpoint** | [https://job-market-analyzer-production.up.railway.app/api/jobs](https://job-market-analyzer-production.up.railway.app/api/jobs) |
 
 
