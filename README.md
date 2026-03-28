@@ -110,4 +110,50 @@ Enter API URL: https://job-market-analyzer-production.up.railway.app/api/jobs
 
 Load and transform data as needed
 
-Create or refresh dashboards
+Create or refresh dashboards                                                                       
+
+Deployment
+The application is deployed on Railway with the following configuration:
+
+Detail	Information
+Platform	Railway
+Public URL	https://job-market-analyzer-production.up.railway.app
+HTTPS	Enabled automatically
+Auto-deploys	Enabled on main branch
+Deployment Commands
+bash
+# Install Railway CLI
+npm install -g @railway/cli
+
+# Login to Railway
+railway login
+
+# Deploy
+railway up
+
+# Set environment variables (if needed)
+railway variables set DB_URL=your_database_url
+
+Project Structure
+text
+job-market-analyzer/
+├── src/
+│   ├── main/
+│   │   ├── java/com/jobmarket/
+│   │   │   ├── JobMarketApplication.java
+│   │   │   ├── controller/
+│   │   │   ├── service/
+│   │   │   ├── repository/
+│   │   │   ├── model/
+│   │   │   └── utils/
+│   │   └── resources/
+│   │       ├── application.properties
+│   │       └── data.sql
+│   └── test/
+├── power-bi/
+│   ├── hiring_trends.pbix
+│   ├── top_companies.pbix
+│   └── skill_demand.pbix
+├── pom.xml
+└── README.md 
+Live API: https://job-market-analyzer-production.up.railway.app/api/jobs
