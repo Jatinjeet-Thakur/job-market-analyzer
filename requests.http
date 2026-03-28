@@ -1,0 +1,41 @@
+### Add job 1
+POST https://job-market-analyzer-production.up.railway.app/api/jobs
+Content-Type: application/json
+
+{
+  "title": "Backend Developer",
+  "company": "Amazon",
+  "location": "Canada",
+  "description": "Java, Spring Boot, AWS"
+}
+
+### Add job 2
+POST https://job-market-analyzer-production.up.railway.app/api/jobs
+Content-Type: application/json
+
+{
+  "title": "Frontend Developer",
+  "company": "Meta",
+  "location": "Canada",
+  "description": "React, FastApi, HTML"
+}
+
+### Add job 3
+POST https://job-market-analyzer-production.up.railway.app/api/jobs
+Content-Type: application/json
+
+{
+  "title": "Full Stack Developer",
+  "company": "Microsoft",
+  "location": "USA",
+  "description": "Python, Java, Node.js"
+}
+
+### Get all jobs
+GET https://job-market-analyzer-production.up.railway.app/api/jobs
+
+### Get trending skills
+GET https://job-market-analyzer-production.up.railway.app/api/jobs/skills/trending
+
+### Search jobs by skill
+GET https://job-market-analyzer-production.up.railway.app/api/jobs/search?skill=python
